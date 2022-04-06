@@ -1,0 +1,28 @@
+@import '../../../../../styles.scss';
+
+.countPill {
+  background-color: $yellow-color;
+  border-radius: 50%;
+  color: #000;
+  font-size: 11px;
+  height: 18px;
+  line-height: normal;
+  margin-left: 0.1875rem;
+  text-align: center;
+  width: 18px;
+  position: absolute;
+  transform: translate(51%, 0);
+  padding: 1px;
+  top: 35px;
+  right: 5.5%;
+}
+
+.jump {
+  transform-origin: 50% 50%;
+  animation: jump .5s linear alternate ;
+}
+@keyframes jump {
+  0%   {transform: translate3d(0,0,0) scale3d(1,1,1);}
+  40%  {transform: translate3d(0,30%,0) scale3d(.7,1.5,1);}
+  100% {transform: translate3d(0,100%,0) scale3d(1.5,.7,1);}
+}

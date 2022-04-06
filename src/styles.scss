@@ -1,0 +1,28 @@
+/* You can add global styles to this file, and also import other style files */
+$blue-color:#8CD0E3;
+$yellow-color:#F5EA77;
+$pink-color:#EE6281;
+$main-font: 'Fira Sans', sans-serif;
+
+////////// main backgrounds //////////////
+.blue_bg{
+  background: $blue-color;
+}
+//////////// global header links /////////////////////////
+.navUser-action{
+  text-decoration: none;
+  &:hover {
+    p{
+       color: $yellow-color;
+    }
+    .fil0{
+      fill: $yellow-color;
+    }
+  }
+  p{
+    color: #fff;
+    font-size: 13px;
+    font-family: $main-font;
+    padding-top: 5px;
+  }
+}
